@@ -10,7 +10,9 @@ function App() {
 
   const addValue = () => {
     if(counter < 10){
-      setCounter(counter + 1);  
+      setCounter(prevCounter => prevCounter +1);  
+      setCounter(prevCounter => prevCounter +1);
+      setCounter(prevCounter => prevCounter +1);
       setMsg("")
     }else{
       setMsg("Maximum value reached")
