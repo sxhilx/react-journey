@@ -12,4 +12,4 @@ Next, I created the TodoItems component, where I set up two states: one for stor
 
 For the input field, if isTodoEditable is false, the readOnly attribute is triggered. This state is toggled by a button, so clicking it reverses the value of isTodoEditable. If isTodoEditable is true, I call the editTodo function, which calls the updateTodo function, passing in the id and an object that uses the spread operator to include the updated todoMsg. Additionally, the disabled attribute is triggered if completed is true.
 
-Finally, I added a delete button that calls the delete function with todo.id when clicked.
+Finally, I added a delete button that calls the delete function with todo.id when clicked. Yea so like this is it.
