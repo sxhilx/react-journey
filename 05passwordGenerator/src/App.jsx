@@ -40,8 +40,8 @@ function App() {
   return (
 
     <>
-      <div className='w-full max-w-lg mx-auto bg-slate-400 shadow-lg rounded-lg px-4 py-2 my-8'>
-        <h1 className='text-lg text-center font-bold underline mb-4'>Password Generator</h1>
+      <div className='w-[90%] max-w-lg mx-auto bg-slate-400 shadow-lg rounded-lg px-4 py-2 my-8'>
+        <h1 className='text-lg text-center font-bold underline mb-4'> <span className='text-teal-600'>Passwordy</span> - The Password Generator</h1>
           <div className='flex overflow-hidden outline-none mb-2 shawdow rounded-lg'>
               <input 
               type="text"
@@ -55,8 +55,8 @@ function App() {
                onClick={copyPassword}
                className='bg-teal-500 inline px-3 py-1 text-black font-medium font-mono hover:bg-teal-600'>{buttonText}</button>
           </div>
-          <div className='flex gap-x-4 overflow-hidden'>
-            <div className='flex items-center gap-x-1'>
+          <div className='flex gap-x-4 overflow-hidden flex-wrap'>
+            <div className='flex items-center gap-1'>
               <input 
               type="range"
               min={8}
@@ -68,7 +68,7 @@ function App() {
               <label htmlFor="length">Length: {length}</label>
             </div>
             
-            <div className='flex items-center gap-x-1'>
+            <div className='flex items-center gap-1 flex-wrap'>
               <input 
               type="checkbox"
               defaultChecked={numbersAllowed}
@@ -79,7 +79,7 @@ function App() {
               <label htmlFor="numbers">Numbers</label>          
             </div>
 
-            <div className='flex items-center gap-x-1'>
+            <div className='flex items-center gap-1 flex-wrap m-2 md:m-0'>
               <input 
               type="checkbox"
               defaultChecked={charAllowed}
