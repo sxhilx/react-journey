@@ -31,9 +31,9 @@ function App() {
 
   return (
     <>
-     <div className='w-full h-screen bg-[#001219] bg-no-repeat bg-cover bg-center flex justify-center items-center'>
+     <div className='w-full h-screen bg-[#001219] flex justify-center items-center'>
       
-      <div className='bg-slate-300 max-w-md mx-auto h-auto justify-center items-center rounded-lg shadow-lg p-3'>
+      <div className='bg-slate-300 w-[90%] max-w-md mx-auto h-auto justify-center items-center rounded-lg shadow-lg p-3'>
 
         <h1 className='text-2xl text-center font-bold underline py-3'>Currency Converter</h1>
 
